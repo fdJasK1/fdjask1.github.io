@@ -1,0 +1,56 @@
+baseURL: 'https://fdjask1.github.io/'
+languageCode: 'en-us'
+title: "fdJasK1's Blog"
+theme: "PaperMod"
+
+params:
+  homeInfoParams:
+    Title: 'Hello My Friend <.<'
+    Content: 
+
+  socialIcons:
+    - name: "github"
+      url: "https://github.com/fdJasK1"
+    - name: "twitter"
+      url: "https://x.com/fdJasK1"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/zr-han-2b3215347/"
+    - name: "email"
+      url: "mailto:fdjaskl0722@gmail.com"
+  cover:
+    linkFullImages: true
+
+  ShowBreadCrumbs: true
+
+  ShowReadingTime: true
+
+  ShowShareButtons: true
+
+  ShowPostNavLinks: true
+
+menu:
+  main:
+    - identifier: "home"
+      name: "Home"
+      url: "/"
+      weight: 1
+
+    - identifier: "archives"
+      name: "Archives"
+      url: "/archives/"
+      weight: 98
+
+    - identifier: "categories"
+      name: "Categories"
+      url: "/categories/"
+      weight: 3
+
+    - identifier: "tags"
+      name: "Tags"
+      url: "/tags/"
+      weight: 3
+
+    - identifier: "contact"
+      name: "Contact"
+      url: "/contact/"
+      weight: 99
