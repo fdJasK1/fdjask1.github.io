@@ -28,6 +28,13 @@ params:
 
   ShowPostNavLinks: true
 
+  math:
+    enable: true
+
+    asciimath: false
+
+    mathjax: false
+
 menu:
   main:
     - identifier: "home"

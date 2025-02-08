@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on fdJasK1&#39;s Blog</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on fdJasK1&#39;s Blog</description>
+    <generator>Hugo -- 0.142.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 07 Feb 2025 13:44:09 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RL Notes</title>
+      <link>http://localhost:1313/posts/rl-notes/</link>
+      <pubDate>Fri, 07 Feb 2025 13:44:09 +0800</pubDate>
+      <guid>http://localhost:1313/posts/rl-notes/</guid>
+      <description>&lt;h1 id=&#34;markov&#34;&gt;Markov&lt;/h1&gt;
+&lt;p&gt;马尔可夫性质(Markov property)是指一个随机过程在给定现在状态及所有过 去状态情况下，其未来状态的条件概率分布&lt;strong&gt;仅依赖于当前状态：&lt;/strong&gt;
+$$
+p\left(X_{t+1}=x_{t+1} \mid X_{0: t}=x_{0: t}\right)=p\left(X_{t+1}=x_{t+1} \mid X_t=x_t\right)
+$$&lt;/p&gt;
+&lt;h2 id=&#34;markov-reward-process-mrp&#34;&gt;Markov Reward Process, MRP&lt;/h2&gt;
+&lt;p&gt;在马尔可夫奖励过程中，状态转移矩阵和状态都与马尔可夫链一样，只是多了&lt;strong&gt;奖励函数(reward function)$ R $&lt;/strong&gt;。它是一个期望，表示当我们到达某一个状态的时候，可以获得多大的奖励。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;!-- raw HTML omitted --&gt;def&lt;!-- raw HTML omitted --&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;定义t时刻的回报（折扣回报）$G_t=r_{t+1}+\gamma r_{t+2}+\gamma^2 r_{t+3}+\gamma^3 r_{t+4}+\ldots+\gamma^{T-t-1} r_T$，是一个随机变量。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;!-- raw HTML omitted --&gt;def&lt;!-- raw HTML omitted --&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;定义回报的期望，即状态价值函数&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+V^t(s) &amp;amp; =\mathbb{E}\left[G_t \mid s_t=s\right] \
+&amp;amp; =\mathbb{E}\left[r_{t+1}+\gamma r_{t+2}+\gamma^2 r_{t+3}+\ldots+\gamma^{T-t-1} r_T \mid s_t=s\right]
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;计算价值函数的方法有多种，如下：&lt;/p&gt;
+&lt;h3 id=&#34;monte-carlo-mc&#34;&gt;Monte Carlo, MC&lt;/h3&gt;
+&lt;p&gt;生成很多轨迹,然把轨迹都叠加起来并取平均值。&lt;/p&gt;
+&lt;h3 id=&#34;bellman-equation&#34;&gt;Bellman equation&lt;/h3&gt;
+&lt;p&gt;从价值函数出发，拆分出即时奖励和未来折扣奖励按概率的加权平均，得到贝尔曼方程：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My First Post</title>
+      <link>http://localhost:1313/posts/my_first_post/</link>
+      <pubDate>Mon, 03 Feb 2025 14:39:56 +0800</pubDate>
+      <guid>http://localhost:1313/posts/my_first_post/</guid>
+      <description>&lt;p&gt;Hello World!&lt;/p&gt;
+&lt;p&gt;This is the very first post of mine!&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-plain&#34; data-lang=&#34;plain&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     _,---.                    ,--.-,   ,---.        ,-,--.  ,--.-.,-.  ,-----.--.  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  .-`.&amp;#39; ,  \  _,..---._       |==&amp;#39; -| .--.&amp;#39;  \     ,-.&amp;#39;-  _\/==/- |\  \/` ` - /==/  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; /==/_  _.-&amp;#39;/==/,   -  \      |==|- | \==\-/\ \   /==/_ ,_.&amp;#39;|==|_ `/_ /`-&amp;#39;-. -|==|  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/==/-  &amp;#39;..-.|==|   _   _\   __|==|, | /==/-|_\ |  \==\  \   |==| ,   /     | `|==|  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|==|_ ,    /|==|  .=.   |,--.-&amp;#39;\=|- | \==\,   - \  \==\ -\  |==|-  .|      | -|==|  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|==|   .--&amp;#39; |==|,|   | -||==|- |=/ ,| /==/ -   ,|  _\==\ ,\ |==| _ , \     | `|==|  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|==|-  |    |==|  &amp;#39;=&amp;#39;   /|==|. /=| -|/==/-  /\ - \/==/\/ _ |/==/  &amp;#39;\  |  .-&amp;#39;,&amp;#39;|==|  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/==/   \    |==|-,   _`/ \==\, `-&amp;#39; / \==\ _.\=\.-&amp;#39;\==\ - , /\==\ /\=\.&amp;#39; /     \==\  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;`--`---&amp;#39;    `-.`.____.&amp;#39;   `--`----&amp;#39;   `--`         `--`---&amp;#39;  `--`       `-----`---` 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+  </channel>
+</rss>

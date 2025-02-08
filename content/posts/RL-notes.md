@@ -1,20 +1,22 @@
-+++
-date = "2025-02-07T13:44:09+08:00"
-draft = false
-title = "RL Notes"
+---
+title: "RL Notes"
+date: "2025-02-07T13:44:09+08:00"
+draft: false
+math: true
 
-tags = ["RL"]
-categories = ["tech"]
-[cover]
-image = "img/EasyRL.png"
-alt = "This is a post image"
-caption = "Starting up with RL!"
-+++
+tags: ["RL"]
+categories: ["tech"]
+cover:
+  image: "img/EasyRL.png"
+  alt: "This is a post image"
+  caption: "Starting up with RL!"
+---
+
 
 
 # Markov
 
-马尔可夫性质(Markov property)是指一个随机过程在给定现在状态及所有过 去状态情况下，其未来状态的条件概率分布**仅依赖于当前状态：**
+马尔可夫性质(Markov property)是指一个随机过程在给定现在状态及所有过去状态情况下，其未来状态的条件概率分布**仅依赖于当前状态：**
 $$
 p\left(X_{t+1}=x_{t+1} \mid X_{0: t}=x_{0: t}\right)=p\left(X_{t+1}=x_{t+1} \mid X_t=x_t\right)
 $$
