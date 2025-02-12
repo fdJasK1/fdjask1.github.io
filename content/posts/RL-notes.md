@@ -27,7 +27,7 @@ $$
 
 **<u>def</u>**
 
-定义t时刻的回报（折扣回报）$G_t=r_{t+1}+\gamma r_{t+2}+\gamma^2 r_{t+3}+\gamma^3 r_{t+4}+\ldots+\gamma^{T-t-1} r_T$，是一个随机变量。
+定义t时刻的回报（折扣回报）$ G_t=r_{t+1}+\gamma r_{t+2}+\gamma^2 r_{t+3}+\gamma^3 r_{t+4}+\ldots+\gamma^{T-t-1} r_T $，是一个随机变量。
 
 **<u>def</u>**
 
@@ -125,7 +125,7 @@ $$
 
 定义策略为一个状态下可能采取动作的概率分布，$\pi (a|s)=p(a_t=a|s_t=s)$
 
-![image-20250120125020130](notes.assets/image-20250120125020130.png)
+![image-20250120125020130](/img/image-20250120125020130.png)
 
 
 
@@ -175,9 +175,9 @@ $$
 
 分别从图形角度解释了Bellman expectation equation！
 
-<img src="notes.assets/image-20250120142832617.png" alt="image-20250120142832617" style="zoom: 64%;" />
+![image-20250120142832617](/img/image-20250120142832617.png)
 
-<img src="notes.assets/image-20250120142841333.png" alt="image-20250120142841333" style="zoom:67.5%;" />
+![image-20250120142841333](/img/image-20250120142841333.png)
 
 
 
@@ -206,7 +206,7 @@ $$
 \pi_{i+1}(s)=\underset{a}{\arg \max } Q_{\pi_i}(s, a)
 $$
 
-<img src="notes.assets/image-20250120151216684.png" alt="image-20250120151216684" style="zoom:67%;" />
+![image-20250120151216684](/img/image-20250120151216684.png)
 
 
 
@@ -240,13 +240,13 @@ $$
 
 
 
-2. 价值迭代
+1. 价值迭代
 
    最优性原理定理（principle of optimality theorem）：一个策略 $\pi(a \mid s)$ 在状态 $s$ 达到了最优价值，也就是 $V_\pi(s)=V^*(s)$ 成立，当且仅当对于任何能够从 $s$ 到达的 $s^{\prime}$ ，都已经达到了最优价值。也就是对于所有的 $s^{\prime}, V_\pi\left(s^{\prime}\right)=V^*\left(s^{\prime}\right)$ 恒成立。
 
 有点乱，待重看！
 
-![image-20250120163046169](notes.assets/image-20250120163046169.png)
+![image-20250120163046169](/img/image-20250120163046169.png)
 
 
 
@@ -498,7 +498,7 @@ $$
 
 相加再得到 $Q(s,a)$：
 
-<img src="notes.assets/image-20250206095042002.png" alt="image-20250206095042002" style="zoom: 50%;" />
+![image-20250206095042002](/img/image-20250206095042002.png)
 
 - 约束：固定 $s$ 不变，$\sum_{a}A(s,a)=0$
 - 实现方法：加入归一化过程（计算均值并减去均值）
@@ -588,7 +588,15 @@ $$
 \end{aligned}
 $$
 
+# 深度确定性策略梯度
 
+从名字拆解出关键词：深度+确定性+策略梯度
+
+将深度Q网络扩展到连续空间，借鉴了其技巧：目标网络和经验回放
+
+![image-20250211120357497](/img/image-20250211120357497.png)
+
+DDPG 的原作者推荐使用时间相关的 OU 噪声，但最近的结果表明不相关的、均值为 0 的高斯噪声的效果非常好。由于后者更简单，因此我们更喜欢使用它。为了便于获得更高质量的训练数据，我们可以在训练过程中把噪声变小。
 
 
 

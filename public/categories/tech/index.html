@@ -57,6 +57,34 @@
 
     </style>
 </noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+    onload="renderMathInElement(document.body, {
+        delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '\\[', right: '\\]', display: true},
+            {left: '$', right: '$', display: false},
+            {left: '\\(', right: '\\)', display: false}
+        ],
+        throwOnError: false,
+        fleqn: true,
+        trust: true,
+        strict: false
+    });"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/mhchem.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll(".katex-display").forEach(el => {
+        el.style.whiteSpace = "normal";
+        el.style.display = "block";
+    });
+});
+</script>
+
+
+
 </head>
 
 <body class="list" id="top">
@@ -142,10 +170,10 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>Markov 马尔可夫性质(Markov property)是指一个随机过程在给定现在状态及所有过 去状态情况下，其未来状态的条件概率分布仅依赖于当前状态： $$ p\left(X_{t&#43;1}=x_{t&#43;1} \mid X_{0: t}=x_{0: t}\right)=p\left(X_{t&#43;1}=x_{t&#43;1} \mid X_t=x_t\right) $$
+    <p>Markov 马尔可夫性质(Markov property)是指一个随机过程在给定现在状态及所有过去状态情况下，其未来状态的条件概率分布仅依赖于当前状态： $$ p\left(X_{t&#43;1}=x_{t&#43;1} \mid X_{0: t}=x_{0: t}\right)=p\left(X_{t&#43;1}=x_{t&#43;1} \mid X_t=x_t\right) $$
 Markov Reward Process, MRP 在马尔可夫奖励过程中，状态转移矩阵和状态都与马尔可夫链一样，只是多了奖励函数(reward function)$ R $。它是一个期望，表示当我们到达某一个状态的时候，可以获得多大的奖励。
 def
-定义t时刻的回报（折扣回报）$G_t=r_{t&#43;1}&#43;\gamma r_{t&#43;2}&#43;\gamma^2 r_{t&#43;3}&#43;\gamma^3 r_{t&#43;4}&#43;\ldots&#43;\gamma^{T-t-1} r_T$，是一个随机变量。
+定义t时刻的回报（折扣回报）$ G_t=r_{t&#43;1}&#43;\gamma r_{t&#43;2}&#43;\gamma^2 r_{t&#43;3}&#43;\gamma^3 r_{t&#43;4}&#43;\ldots&#43;\gamma^{T-t-1} r_T $，是一个随机变量。
 def
 定义回报的期望，即状态价值函数
 $$ \begin{aligned} V^t(s) &amp; =\mathbb{E}\left[G_t \mid s_t=s\right] \ &amp; =\mathbb{E}\left[r_{t&#43;1}&#43;\gamma r_{t&#43;2}&#43;\gamma^2 r_{t&#43;3}&#43;\ldots&#43;\gamma^{T-t-1} r_T \mid s_t=s\right] \end{aligned} $$

@@ -21,7 +21,7 @@ $$&lt;/p&gt;
 &lt;h2 id=&#34;markov-reward-process-mrp&#34;&gt;Markov Reward Process, MRP&lt;/h2&gt;
 &lt;p&gt;在马尔可夫奖励过程中，状态转移矩阵和状态都与马尔可夫链一样，只是多了&lt;strong&gt;奖励函数(reward function)$ R $&lt;/strong&gt;。它是一个期望，表示当我们到达某一个状态的时候，可以获得多大的奖励。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;!-- raw HTML omitted --&gt;def&lt;!-- raw HTML omitted --&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;定义t时刻的回报（折扣回报）$G_t=r_{t+1}+\gamma r_{t+2}+\gamma^2 r_{t+3}+\gamma^3 r_{t+4}+\ldots+\gamma^{T-t-1} r_T$，是一个随机变量。&lt;/p&gt;
+&lt;p&gt;定义t时刻的回报（折扣回报）$ G_t=r_{t+1}+\gamma r_{t+2}+\gamma^2 r_{t+3}+\gamma^3 r_{t+4}+\ldots+\gamma^{T-t-1} r_T $，是一个随机变量。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;!-- raw HTML omitted --&gt;def&lt;!-- raw HTML omitted --&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;定义回报的期望，即状态价值函数&lt;/p&gt;
 &lt;p&gt;$$
@@ -34,10 +34,7 @@ $$&lt;/p&gt;
 &lt;h3 id=&#34;monte-carlo-mc&#34;&gt;Monte Carlo, MC&lt;/h3&gt;
 &lt;p&gt;生成很多轨迹,然把轨迹都叠加起来并取平均值。&lt;/p&gt;
 &lt;h3 id=&#34;bellman-equation&#34;&gt;Bellman equation&lt;/h3&gt;
-&lt;p&gt;从价值函数出发，拆分出即时奖励和未来折扣奖励按概率的加权平均，得到贝尔曼方程：&lt;/p&gt;
-&lt;p&gt;$$
-V(s)=\underbrace{R(s)}&lt;em&gt;{\text {即时奖励 }}+\underbrace{\gamma \sum&lt;/em&gt;{s^{\prime} \in S} p\left(s^{\prime} \mid s\right) V\left(s^{\prime}\right)}_{\text {未来奖励的折扣总和 }}
-$$&lt;/p&gt;</description>
+&lt;p&gt;从价值函数出发，拆分出即时奖励和未来折扣奖励按概率的加权平均，得到贝尔曼方程：&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

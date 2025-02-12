@@ -15,7 +15,7 @@ $$
 Markov Reward Process, MRP
 在马尔可夫奖励过程中，状态转移矩阵和状态都与马尔可夫链一样，只是多了奖励函数(reward function)$ R $。它是一个期望，表示当我们到达某一个状态的时候，可以获得多大的奖励。
 def
-定义t时刻的回报（折扣回报）$G_t=r_{t&#43;1}&#43;\gamma r_{t&#43;2}&#43;\gamma^2 r_{t&#43;3}&#43;\gamma^3 r_{t&#43;4}&#43;\ldots&#43;\gamma^{T-t-1} r_T$，是一个随机变量。
+定义t时刻的回报（折扣回报）$ G_t=r_{t&#43;1}&#43;\gamma r_{t&#43;2}&#43;\gamma^2 r_{t&#43;3}&#43;\gamma^3 r_{t&#43;4}&#43;\ldots&#43;\gamma^{T-t-1} r_T $，是一个随机变量。
 def
 定义回报的期望，即状态价值函数
 $$
@@ -28,10 +28,7 @@ $$
 Monte Carlo, MC
 生成很多轨迹,然把轨迹都叠加起来并取平均值。
 Bellman equation
-从价值函数出发，拆分出即时奖励和未来折扣奖励按概率的加权平均，得到贝尔曼方程：
-$$
-V(s)=\underbrace{R(s)}{\text {即时奖励 }}&#43;\underbrace{\gamma \sum{s^{\prime} \in S} p\left(s^{\prime} \mid s\right) V\left(s^{\prime}\right)}_{\text {未来奖励的折扣总和 }}
-$$">
+从价值函数出发，拆分出即时奖励和未来折扣奖励按概率的加权平均，得到贝尔曼方程：">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/posts/rl-notes/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.9de45e225101e4f99701d2b68fc6b8a1ef6027928be6391fa15bf7f56326c909.css" integrity="sha256-neReIlEB5PmXAdK2j8a4oe9gJ5KL5jkfoVv39WMmyQk=" rel="preload stylesheet" as="style">
@@ -80,6 +77,34 @@ $$">
 
     </style>
 </noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+    onload="renderMathInElement(document.body, {
+        delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '\\[', right: '\\]', display: true},
+            {left: '$', right: '$', display: false},
+            {left: '\\(', right: '\\)', display: false}
+        ],
+        throwOnError: false,
+        fleqn: true,
+        trust: true,
+        strict: false
+    });"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/mhchem.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll(".katex-display").forEach(el => {
+        el.style.whiteSpace = "normal";
+        el.style.display = "block";
+    });
+});
+</script>
+
+
+
 </head>
 
 <body class="" id="top">
@@ -174,7 +199,7 @@ $$</p>
 <h2 id="markov-reward-process-mrp">Markov Reward Process, MRP<a hidden class="anchor" aria-hidden="true" href="#markov-reward-process-mrp">#</a></h2>
 <p>在马尔可夫奖励过程中，状态转移矩阵和状态都与马尔可夫链一样，只是多了<strong>奖励函数(reward function)$ R $</strong>。它是一个期望，表示当我们到达某一个状态的时候，可以获得多大的奖励。</p>
 <p><strong><!-- raw HTML omitted -->def<!-- raw HTML omitted --></strong></p>
-<p>定义t时刻的回报（折扣回报）$G_t=r_{t+1}+\gamma r_{t+2}+\gamma^2 r_{t+3}+\gamma^3 r_{t+4}+\ldots+\gamma^{T-t-1} r_T$，是一个随机变量。</p>
+<p>定义t时刻的回报（折扣回报）$ G_t=r_{t+1}+\gamma r_{t+2}+\gamma^2 r_{t+3}+\gamma^3 r_{t+4}+\ldots+\gamma^{T-t-1} r_T $，是一个随机变量。</p>
 <p><strong><!-- raw HTML omitted -->def<!-- raw HTML omitted --></strong></p>
 <p>定义回报的期望，即状态价值函数</p>
 <p>$$
@@ -243,7 +268,7 @@ $$</p>
 <p>相对于马尔可夫奖励过程，马尔可夫决策过程多了决策(决策是指动作)，其他的定义与马尔可夫奖励过程的是类似的。</p>
 <p><strong><!-- raw HTML omitted -->def<!-- raw HTML omitted --></strong></p>
 <p>定义策略为一个状态下可能采取动作的概率分布，$\pi (a|s)=p(a_t=a|s_t=s)$</p>
-<p><img alt="image-20250120125020130" loading="lazy" src="notes.assets/image-20250120125020130.png"></p>
+<p><img alt="image-20250120125020130" loading="lazy" src="/img/image-20250120125020130.png"></p>
 <p><strong><!-- raw HTML omitted -->def<!-- raw HTML omitted --></strong></p>
 <p>状态价值函数的定义与MRP形式相同，为$V_\pi(s)=\mathbb{E}_\pi\left[G_t \mid s_t=s\right]$。确定一个策略之后，对策略进行采样就可以得到期望。</p>
 <p><strong><!-- raw HTML omitted -->def<!-- raw HTML omitted --></strong></p>
@@ -274,8 +299,8 @@ Q_\pi(s, a)=R(s, a)+\gamma \sum_{s^{\prime} \in S} p\left(s^{\prime} \mid s, a\r
 $$</p>
 <h4 id="备份图">备份图<a hidden class="anchor" aria-hidden="true" href="#备份图">#</a></h4>
 <p>分别从图形角度解释了Bellman expectation equation！</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p><img alt="image-20250120142832617" loading="lazy" src="/img/image-20250120142832617.png"></p>
+<p><img alt="image-20250120142841333" loading="lazy" src="/img/image-20250120142841333.png"></p>
 <h3 id="预测与控制">预测与控制<a hidden class="anchor" aria-hidden="true" href="#预测与控制">#</a></h3>
 <ul>
 <li>预测（评估一个给定的策略）的输入是马尔可夫决策过程$&lt; S,A,P,R,\gamma&gt;$和策略$π$，输出是价值函数$V_π$。预测是指给定一个马尔可夫决策过程以及一个策略$π$，计算它的价值函数，也就是计算每个状态的价值。</li>
@@ -296,7 +321,7 @@ $$</p>
 <p>$$
 \pi_{i+1}(s)=\underset{a}{\arg \max } Q_{\pi_i}(s, a)
 $$</p>
-<!-- raw HTML omitted -->
+<p><img alt="image-20250120151216684" loading="lazy" src="/img/image-20250120151216684.png"></p>
 <ul>
 <li><strong>Bellman optimality equation</strong>：最佳策略下的一个状态的价值必须等于在这个状态下采取最好动作得到的回报的期望</li>
 </ul>
@@ -322,14 +347,14 @@ V^</em>(s) &amp; =\max _a Q^*(s, a) \</p>
 &amp; =\max <em>a\left(R(s, a)+\gamma \sum</em>{s^{\prime} \in S} p\left(s^{\prime} \mid s, a\right) V^</em>\left(s^{\prime}\right)\right)
 \end{aligned}
 $$</p>
-<ol start="2">
+<ol>
 <li>
 <p>价值迭代</p>
 <p>最优性原理定理（principle of optimality theorem）：一个策略 $\pi(a \mid s)$ 在状态 $s$ 达到了最优价值，也就是 $V_\pi(s)=V^<em>(s)$ 成立，当且仅当对于任何能够从 $s$ 到达的 $s^{\prime}$ ，都已经达到了最优价值。也就是对于所有的 $s^{\prime}, V_\pi\left(s^{\prime}\right)=V^</em>\left(s^{\prime}\right)$ 恒成立。</p>
 </li>
 </ol>
 <p>有点乱，待重看！</p>
-<p><img alt="image-20250120163046169" loading="lazy" src="notes.assets/image-20250120163046169.png"></p>
+<p><img alt="image-20250120163046169" loading="lazy" src="/img/image-20250120163046169.png"></p>
 <h1 id="表格型方法">表格型方法<a hidden class="anchor" aria-hidden="true" href="#表格型方法">#</a></h1>
 <h2 id="免模型预测">免模型预测<a hidden class="anchor" aria-hidden="true" href="#免模型预测">#</a></h2>
 <ul>
@@ -516,7 +541,7 @@ $$
 <h3 id="dueling-dqn">Dueling DQN<a hidden class="anchor" aria-hidden="true" href="#dueling-dqn">#</a></h3>
 <p>与DQN不同，Dueling DQN会拆分成两条路径运算，分别给出一个标量 $V(s)$ 和一个向量 $A(s, a)$，后者叫优势函数。</p>
 <p>相加再得到 $Q(s,a)$：</p>
-<!-- raw HTML omitted -->
+<p><img alt="image-20250206095042002" loading="lazy" src="/img/image-20250206095042002.png"></p>
 <ul>
 <li>约束：固定 $s$ 不变，$\sum_{a}A(s,a)=0$</li>
 <li>实现方法：加入归一化过程（计算均值并减去均值）</li>
@@ -576,6 +601,11 @@ $$</p>
 &amp; \approx\frac{1}{N} \sum</em>{n=1}^N \sum_{t=1}^{T_n} (r_t^n+V_\pi\left(s_{t+1}^n\right)-V_\pi\left(s_t^n\right)) \nabla \log p_\theta\left(a_t^n \mid s_t^n\right)
 \end{aligned}
 $$</p>
+<h1 id="深度确定性策略梯度">深度确定性策略梯度<a hidden class="anchor" aria-hidden="true" href="#深度确定性策略梯度">#</a></h1>
+<p>从名字拆解出关键词：深度+确定性+策略梯度</p>
+<p>将深度Q网络扩展到连续空间，借鉴了其技巧：目标网络和经验回放</p>
+<p><img alt="image-20250211120357497" loading="lazy" src="/img/image-20250211120357497.png"></p>
+<p>DDPG 的原作者推荐使用时间相关的 OU 噪声，但最近的结果表明不相关的、均值为 0 的高斯噪声的效果非常好。由于后者更简单，因此我们更喜欢使用它。为了便于获得更高质量的训练数据，我们可以在训练过程中把噪声变小。</p>
 
 
   </div>

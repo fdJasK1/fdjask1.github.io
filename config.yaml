@@ -28,12 +28,7 @@ params:
 
   ShowPostNavLinks: true
 
-  math:
-    enable: true
-
-    asciimath: false
-
-    mathjax: false
+  math: true
 
 menu:
   main:
