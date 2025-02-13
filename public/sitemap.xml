@@ -26,6 +26,8 @@
     <loc>http://localhost:1313/posts/my_first_post/</loc>
     <lastmod>2025-02-03T14:39:56+08:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/posts/24fall/</loc>
+  </url><url>
     <loc>http://localhost:1313/archives/</loc>
   </url>
 </urlset>

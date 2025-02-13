@@ -6,8 +6,16 @@
     <description>Recent content in Posts on fdJasK1&#39;s Blog</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Feb 2025 13:44:09 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 13 Feb 2025 23:46:55 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cruise Control Diaries</title>
+      <link>http://localhost:1313/posts/cruise_control_diaries/</link>
+      <pubDate>Thu, 13 Feb 2025 23:46:55 +0800</pubDate>
+      <guid>http://localhost:1313/posts/cruise_control_diaries/</guid>
+      <description>&lt;p&gt;拿驾照即将年满一年了，总行驶里程得有2000km~3000km。感觉还是很开心的！&lt;/p&gt;
+&lt;p&gt;应该是去年寒假，在大望路的Starbucks和Chris见面聊起来学车的事，他就说现在开车已经是个必备的技能了。我当时觉得有点难评，毕竟自动驾驶的时代马上就要来临，现在学车是否有必要性还有待考究。但我从一开始确实就是想学车的。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>RL Notes</title>
       <link>http://localhost:1313/posts/rl-notes/</link>
@@ -17,24 +25,7 @@
 &lt;p&gt;马尔可夫性质(Markov property)是指一个随机过程在给定现在状态及所有过去状态情况下，其未来状态的条件概率分布&lt;strong&gt;仅依赖于当前状态：&lt;/strong&gt;
 $$
 p\left(X_{t+1}=x_{t+1} \mid X_{0: t}=x_{0: t}\right)=p\left(X_{t+1}=x_{t+1} \mid X_t=x_t\right)
-$$&lt;/p&gt;
-&lt;h2 id=&#34;markov-reward-process-mrp&#34;&gt;Markov Reward Process, MRP&lt;/h2&gt;
-&lt;p&gt;在马尔可夫奖励过程中，状态转移矩阵和状态都与马尔可夫链一样，只是多了&lt;strong&gt;奖励函数(reward function)$ R $&lt;/strong&gt;。它是一个期望，表示当我们到达某一个状态的时候，可以获得多大的奖励。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;!-- raw HTML omitted --&gt;def&lt;!-- raw HTML omitted --&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;定义t时刻的回报（折扣回报）$ G_t=r_{t+1}+\gamma r_{t+2}+\gamma^2 r_{t+3}+\gamma^3 r_{t+4}+\ldots+\gamma^{T-t-1} r_T $，是一个随机变量。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;!-- raw HTML omitted --&gt;def&lt;!-- raw HTML omitted --&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;定义回报的期望，即状态价值函数&lt;/p&gt;
-&lt;p&gt;$$
-\begin{aligned}
-V^t(s) &amp;amp; =\mathbb{E}\left[G_t \mid s_t=s\right] \
-&amp;amp; =\mathbb{E}\left[r_{t+1}+\gamma r_{t+2}+\gamma^2 r_{t+3}+\ldots+\gamma^{T-t-1} r_T \mid s_t=s\right]
-\end{aligned}
-$$&lt;/p&gt;
-&lt;p&gt;计算价值函数的方法有多种，如下：&lt;/p&gt;
-&lt;h3 id=&#34;monte-carlo-mc&#34;&gt;Monte Carlo, MC&lt;/h3&gt;
-&lt;p&gt;生成很多轨迹,然把轨迹都叠加起来并取平均值。&lt;/p&gt;
-&lt;h3 id=&#34;bellman-equation&#34;&gt;Bellman equation&lt;/h3&gt;
-&lt;p&gt;从价值函数出发，拆分出即时奖励和未来折扣奖励按概率的加权平均，得到贝尔曼方程：&lt;/p&gt;</description>
+$$&lt;/p&gt;</description>
     </item>
     <item>
       <title>My First Post</title>
