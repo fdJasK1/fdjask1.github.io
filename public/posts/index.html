@@ -68,14 +68,21 @@
             {left: '\\(', right: '\\)', display: false}
         ],
         throwOnError: false,
-        macros: {
-            '\\RR': '\\mathbb{R}',
-            '\\bold': '\\mathbf{#1}'
-        },
+        fleqn: true,
         trust: true,
         strict: false
     });"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/mhchem.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll(".katex-display").forEach(el => {
+        el.style.whiteSpace = "normal";
+        el.style.display = "block";
+    });
+});
+</script>
+
 
 
 </head>
@@ -141,8 +148,8 @@
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/contact/" title="Contact">
-                    <span>Contact</span>
+                <a href="http://localhost:1313/about/" title="About">
+                    <span>About</span>
                 </a>
             </li>
         </ul>
@@ -156,6 +163,20 @@
 </header>
 
 <article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Cruise Control Diaries
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>拿驾照即将年满一年了，总行驶里程得有2000km~3000km。感觉还是很开心的！
+应该是去年寒假，在大望路的Starbucks和Chris见面聊起来学车的事，他就说现在开车已经是个必备的技能了。我当时觉得有点难评，毕竟自动驾驶的时代马上就要来临，现在学车是否有必要性还有待考究。但我从一开始确实就是想学车的。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-02-13 23:46:55 +0800 CST'>February 13, 2025</span>&nbsp;·&nbsp;2 min</footer>
+  <a class="entry-link" aria-label="post link to Cruise Control Diaries" href="http://localhost:1313/posts/cruise_control_diaries/"></a>
+</article>
+
+<article class="post-entry"> 
 <figure class="entry-cover"><img loading="lazy" src="http://localhost:1313/img/EasyRL.png" alt="This is a post image">
 </figure>
   <header class="entry-header">
@@ -164,18 +185,9 @@
   </header>
   <div class="entry-content">
     <p>Markov 马尔可夫性质(Markov property)是指一个随机过程在给定现在状态及所有过去状态情况下，其未来状态的条件概率分布仅依赖于当前状态： $$ p\left(X_{t&#43;1}=x_{t&#43;1} \mid X_{0: t}=x_{0: t}\right)=p\left(X_{t&#43;1}=x_{t&#43;1} \mid X_t=x_t\right) $$
-Markov Reward Process, MRP 在马尔可夫奖励过程中，状态转移矩阵和状态都与马尔可夫链一样，只是多了奖励函数(reward function)$ R $。它是一个期望，表示当我们到达某一个状态的时候，可以获得多大的奖励。
-def
-定义t时刻的回报（折扣回报）$ G_t=r_{t&#43;1}&#43;\gamma r_{t&#43;2}&#43;\gamma^2 r_{t&#43;3}&#43;\gamma^3 r_{t&#43;4}&#43;\ldots&#43;\gamma^{T-t-1} r_T $，是一个随机变量。
-def
-定义回报的期望，即状态价值函数
-$$ \begin{aligned} V^t(s) &amp; =\mathbb{E}\left[G_t \mid s_t=s\right] \ &amp; =\mathbb{E}\left[r_{t&#43;1}&#43;\gamma r_{t&#43;2}&#43;\gamma^2 r_{t&#43;3}&#43;\ldots&#43;\gamma^{T-t-1} r_T \mid s_t=s\right] \end{aligned} $$
-计算价值函数的方法有多种，如下：
-Monte Carlo, MC 生成很多轨迹,然把轨迹都叠加起来并取平均值。
-Bellman equation 从价值函数出发，拆分出即时奖励和未来折扣奖励按概率的加权平均，得到贝尔曼方程：
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-02-07 13:44:09 +0800 CST'>February 7, 2025</span>&nbsp;·&nbsp;7 min</footer>
+  <footer class="entry-footer"><span title='2025-02-07 13:44:09 +0800 CST'>February 7, 2025</span>&nbsp;·&nbsp;14 min</footer>
   <a class="entry-link" aria-label="post link to RL Notes" href="http://localhost:1313/posts/rl-notes/"></a>
 </article>
 
@@ -184,11 +196,6 @@ Bellman equation 从价值函数出发，拆分出即时奖励和未来折扣奖
     <h2 class="entry-hint-parent">My First Post
     </h2>
   </header>
-  <div class="entry-content">
-    <p>Hello World!
-This is the very first post of mine!
-_,---. ,--.-, ,---. ,-,--. ,--.-.,-. ,-----.--. .-`.&#39; , \ _,..---._ |==&#39; -| .--.&#39; \ ,-.&#39;- _\/==/- |\ \/` ` - /==/ /==/_ _.-&#39;/==/, - \ |==|- | \==\-/\ \ /==/_ ,_.&#39;|==|_ `/_ /`-&#39;-. -|==| /==/- &#39;..-.|==| _ _\ __|==|, | /==/-|_\ | \==\ \ |==| , / | `|==| |==|_ , /|==| .=. |,--.-&#39;\=|- | \==\, - \ \==\ -\ |==|- .| | -|==| |==| .--&#39; |==|,| | -||==|- |=/ ,| /==/ - ,| _\==\ ,\ |==| _ , \ | `|==| |==|- | |==| &#39;=&#39; /|==|. /=| -|/==/- /\ - \/==/\/ _ |/==/ &#39;\ | .-&#39;,&#39;|==| /==/ \ |==|-, _`/ \==\, `-&#39; / \==\ _.\=\.-&#39;\==\ - , /\==\ /\=\.&#39; / \==\ `--`---&#39; `-.`.____.&#39; `--`----&#39; `--` `--`---&#39; `--` `-----`---` </p>
-  </div>
   <footer class="entry-footer"><span title='2025-02-03 14:39:56 +0800 CST'>February 3, 2025</span>&nbsp;·&nbsp;1 min</footer>
   <a class="entry-link" aria-label="post link to My First Post" href="http://localhost:1313/posts/my_first_post/"></a>
 </article>

@@ -3,6 +3,13 @@ languageCode: 'en-us'
 title: "fdJasK1's Blog"
 theme: "PaperMod"
 
+enableInlineShortcodes: true
+enableEmoji: true
+
+hasCJKLanguage: true
+
+paginate: 10
+
 params:
   homeInfoParams:
     Title: 'Hello My Friend <.<'
@@ -52,7 +59,7 @@ menu:
       url: "/tags/"
       weight: 3
 
-    - identifier: "contact"
-      name: "Contact"
-      url: "/contact/"
+    - identifier: "about"
+      name: "About"
+      url: "/about/"
       weight: 99
