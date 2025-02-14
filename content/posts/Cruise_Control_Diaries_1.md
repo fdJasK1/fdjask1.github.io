@@ -1,11 +1,11 @@
-+++
-date = '2025-02-13T23:46:55+08:00'
-draft = false
-title = 'Cruise Control Diaries #1'
+---
+date: "2025-02-13T23:46:55+08:00"
+draft: false
+title: "Cruise Control Diaries #1"
 
 tags: ["Cruise Control Diaries"]
 categories: ["life"]
-+++
+---
 
 拿驾照即将年满一年了，总行驶里程得有2000km~3000km。感觉还是很开心的！
 
@@ -36,3 +36,5 @@ categories: ["life"]
 ---
 
 很开心，独立驾驶是成人过程的重要一步。在享受驾驶自由的同时也意味着逐渐承担起更多责任了。
+
+![5b71110ec073e309255cf49458df22f](/img/5b71110ec073e309255cf49458df22f.jpg)
