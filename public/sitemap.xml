@@ -3,24 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-02-13T23:46:55+08:00</lastmod>
+    <lastmod>2025-02-17T23:28:21+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/course/</loc>
+    <lastmod>2025-02-17T23:28:21+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-02-17T23:28:21+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/life-lesson/</loc>
+    <lastmod>2025-02-17T23:28:21+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-02-17T23:28:21+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/swimming/</loc>
+    <lastmod>2025-02-17T23:28:21+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-02-17T23:28:21+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025/random_thoughts/swimming_club/</loc>
+    <lastmod>2025-02-17T23:28:21+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/cruise-control-diaries/</loc>
     <lastmod>2025-02-13T23:46:55+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/cruise_control_diaries_1/</loc>
-    <lastmod>2025-02-13T23:46:55+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:1313/posts/2025/random_thoughts/cruise_control_diaries_1/</loc>
     <lastmod>2025-02-13T23:46:55+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/life/</loc>
-    <lastmod>2025-02-13T23:46:55+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-02-13T23:46:55+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-02-13T23:46:55+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/rl/</loc>

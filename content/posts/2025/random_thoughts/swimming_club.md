@@ -1,10 +1,13 @@
 ---
 date: "2025-02-17T23:28:21+08:00"
-draft: true
+draft: false
 title: "修游泳俱乐部课程有感"
 
 tags: ["Swimming", "Life Lesson"]
 categories: ["course"]
+cover:
+  image: "/posts/2025/random_thoughts/swimming_club.assets/DSC_8762.JPG"
+  caption: "First Lesson"
 ---
 
 过去的一个秋季学期，完成了一件自认为十分了不起的事情：完成了**游泳俱乐部课程**的学习。回想学期初，报名的原因无非就两个：一是抽签时足球课掉了，去到了我不想尝试的人体工程；二是确实想要提升一下游泳技术，既实用又多一种强身健体的运动，很不错嘛。因此，报名之时没想那么多，几乎没有犹豫就填了表。

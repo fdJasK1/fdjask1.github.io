@@ -6,8 +6,15 @@
     <description>Recent content in Categories on fdJasK1&#39;s Blog</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 Feb 2025 23:46:55 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 17 Feb 2025 23:28:21 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Course</title>
+      <link>http://localhost:1313/categories/course/</link>
+      <pubDate>Mon, 17 Feb 2025 23:28:21 +0800</pubDate>
+      <guid>http://localhost:1313/categories/course/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Life</title>
       <link>http://localhost:1313/categories/life/</link>
