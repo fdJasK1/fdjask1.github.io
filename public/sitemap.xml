@@ -2,28 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/buaa/</loc>
+    <lastmod>2025-03-15T11:06:11+08:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/2025/os/lab0/</loc>
+    <lastmod>2025-03-15T11:06:11+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2025-03-15T11:06:11+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/course/</loc>
     <lastmod>2025-03-15T11:06:11+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2025-03-15T11:06:11+08:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/os/</loc>
+    <lastmod>2025-03-15T11:06:11+08:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-03-15T11:06:11+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-02-17T23:28:21+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/course/</loc>
-    <lastmod>2025-02-17T23:28:21+08:00</lastmod>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-03-15T11:06:11+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/life-lesson/</loc>
     <lastmod>2025-02-17T23:28:21+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/swimming/</loc>
-    <lastmod>2025-02-17T23:28:21+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-02-17T23:28:21+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2025/random_thoughts/swimming_club/</loc>
