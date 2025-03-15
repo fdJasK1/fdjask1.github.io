@@ -3,7 +3,7 @@ date: "2025-02-17T23:28:21+08:00"
 draft: false
 title: "修游泳俱乐部课程有感"
 
-tags: ["Swimming", "Life Lesson"]
+tags: ["Swimming", "Life Lesson", "BUAA"]
 categories: ["course"]
 cover:
   image: "/posts/2025/random_thoughts/swimming_club.assets/DSC_8762.JPG"
