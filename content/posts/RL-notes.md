@@ -10,6 +10,7 @@ cover:
   image: "img/EasyRL.png"
   alt: "This is a post image"
   caption: "Starting up with RL!"
+summary: 我的强化学习笔记
 ---
 
 

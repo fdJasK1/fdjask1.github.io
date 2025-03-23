@@ -9,11 +9,11 @@
     <lastBuildDate>Sat, 15 Mar 2025 11:06:11 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/os/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>BUAA_2025_OS_Lab0上机总结</title>
-      <link>http://localhost:1313/posts/2025/os/lab0/</link>
+      <title>BUAA_2025_OS_Lab0 上机总结</title>
+      <link>http://localhost:1313/posts/2025/03/os_lab0/</link>
       <pubDate>Sat, 15 Mar 2025 11:06:11 +0800</pubDate>
-      <guid>http://localhost:1313/posts/2025/os/lab0/</guid>
-      <description>&lt;p&gt;按照惯例，本次上机有exam和extra共两个题目。笔者和舍友在考前阅读了一些往年Lab0上机总结，与本次进行了对比。考后大家的普遍感受是题量偏多，难度较高。但也如助教所说，exam这道题完全是根据指导书出的，没有涉及超出要求的内容。&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2025/03/os_lab0/</guid>
+      <description>北航2025年操作系统Lab0上机题目回顾及分析</description>
     </item>
   </channel>
 </rss>

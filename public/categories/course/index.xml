@@ -6,21 +6,28 @@
     <description>Recent content in Course on fdJasK1&#39;s Blog</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Mar 2025 11:06:11 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 23 Mar 2025 18:37:03 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/course/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>BUAA_2025_OS_Lab0上机总结</title>
-      <link>http://localhost:1313/posts/2025/os/lab0/</link>
-      <pubDate>Sat, 15 Mar 2025 11:06:11 +0800</pubDate>
-      <guid>http://localhost:1313/posts/2025/os/lab0/</guid>
-      <description>&lt;p&gt;按照惯例，本次上机有exam和extra共两个题目。笔者和舍友在考前阅读了一些往年Lab0上机总结，与本次进行了对比。考后大家的普遍感受是题量偏多，难度较高。但也如助教所说，exam这道题完全是根据指导书出的，没有涉及超出要求的内容。&lt;/p&gt;</description>
+      <title>BUAA_2025_OO_Unit1 单元总结</title>
+      <link>http://localhost:1313/posts/2025/03/oo_unit1/</link>
+      <pubDate>Sun, 23 Mar 2025 18:37:03 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2025/03/oo_unit1/</guid>
+      <description>北航2025年面向对象设计与构造Unit1总结</description>
     </item>
     <item>
-      <title>修游泳俱乐部课程有感</title>
-      <link>http://localhost:1313/posts/2025/random_thoughts/swimming_club/</link>
+      <title>BUAA_2025_OS_Lab0 上机总结</title>
+      <link>http://localhost:1313/posts/2025/03/os_lab0/</link>
+      <pubDate>Sat, 15 Mar 2025 11:06:11 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2025/03/os_lab0/</guid>
+      <description>北航2025年操作系统Lab0上机题目回顾及分析</description>
+    </item>
+    <item>
+      <title>BUAA_2024_俱乐部课程_游泳 课程总结</title>
+      <link>http://localhost:1313/posts/2025/02/swimming_club/</link>
       <pubDate>Mon, 17 Feb 2025 23:28:21 +0800</pubDate>
-      <guid>http://localhost:1313/posts/2025/random_thoughts/swimming_club/</guid>
-      <description>&lt;p&gt;过去的一个秋季学期，完成了一件自认为十分了不起的事情：完成了&lt;strong&gt;游泳俱乐部课程&lt;/strong&gt;的学习。回想学期初，报名的原因无非就两个：一是抽签时足球课掉了，去到了我不想尝试的人体工程；二是确实想要提升一下游泳技术，既实用又多一种强身健体的运动，很不错嘛。因此，报名之时没想那么多，几乎没有犹豫就填了表。&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2025/02/swimming_club/</guid>
+      <description>北航2024年游泳俱乐部课程回顾</description>
     </item>
   </channel>
 </rss>
