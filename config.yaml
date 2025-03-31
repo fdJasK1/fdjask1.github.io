@@ -24,7 +24,6 @@ params:
     theme_color: "#2e2e33"
     msapplication_TileColor: "#2e2e33"
 
-
   socialIcons:
     - name: "github"
       url: "https://github.com/fdJasK1"
@@ -34,6 +33,7 @@ params:
       url: "https://www.linkedin.com/in/zr-han-2b3215347/"
     - name: "email"
       url: "mailto:fdjaskl0722@gmail.com"
+
   cover:
     linkFullImages: true
 
@@ -46,6 +46,13 @@ params:
   ShowPostNavLinks: true
 
   math: true
+
+  busuanzi:
+    enable: true
+    site_pv: true
+    site_uv: true
+    page_pv: true
+    page_uv: true
 
 menu:
   main:
