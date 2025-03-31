@@ -5,6 +5,7 @@ title: "Cruise Control Diaries #1"
 
 tags: ["Cruise Control Diaries"]
 categories: ["life"]
+ShowWordCount: true
 hideSummary: true
 ---
 

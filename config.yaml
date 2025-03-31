@@ -69,7 +69,12 @@ menu:
       url: "/tags/"
       weight: 3
 
+    - identifier: friends
+      name: Friends
+      url: /friends/
+      weight: 99
+
     - identifier: "about"
       name: "About"
       url: "/about/"
-      weight: 99
+      weight: 100
