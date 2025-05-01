@@ -6,8 +6,15 @@
     <description>Recent content in Course on fdJasK1&#39;s Blog</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 23 Mar 2025 18:37:03 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 30 Apr 2025 21:11:31 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/course/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BUAA_2025_OS_Lab3 上机总结</title>
+      <link>http://localhost:1313/posts/2025/04/os_lab3/</link>
+      <pubDate>Wed, 30 Apr 2025 21:11:31 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2025/04/os_lab3/</guid>
+      <description>北航2025年操作系统Lab3上机题目回顾及分析</description>
+    </item>
     <item>
       <title>BUAA_2025_OO_Unit1 单元总结</title>
       <link>http://localhost:1313/posts/2025/03/oo_unit1/</link>
