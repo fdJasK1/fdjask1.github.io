@@ -37,7 +37,7 @@ $$
 
 $$
 \begin{aligned}
-V^t(s) & =\mathbb{E}\left[G_t \mid s_t=s\right] \\
+V^t(s) & =\mathbb{E}\left[G_t \mid s_t=s\right] \\\\
 & =\mathbb{E}\left[r_{t+1}+\gamma r_{t+2}+\gamma^2 r_{t+3}+\ldots+\gamma^{T-t-1} r_T \mid s_t=s\right]
 \end{aligned}
 $$
@@ -67,15 +67,15 @@ $$
 第一个等号来自状态价值函数的定义，因此现在推导第二个等号。为记号简洁，将t时刻的量去掉下标，将t+1时刻的量去掉下标并加上标'
 $$
 \begin{aligned}
-\mathbb{E}\left[\mathbb{E}\left[G_{t+1} \mid s_{t+1}\right] \mid s_t\right] & =\mathbb{E}\left[\mathbb{E}\left[g^{\prime} \mid s^{\prime}\right] \mid s\right] \\
-& =\mathbb{E}\left[\sum_{g^{\prime}} g^{\prime} p\left(g^{\prime} \mid s^{\prime}\right) \mid s\right]\space (由条件期望定义) \\
-& =\sum_{s^{\prime}} \sum_{g^{\prime}} g^{\prime} p\left(g^{\prime} \mid s^{\prime}, s\right) p\left(s^{\prime} \mid s\right)\space (由条件期望定义) \\
-& =\sum_{s^{\prime}} \sum_{g^{\prime}} \frac{g^{\prime} p\left(g^{\prime} \mid s^{\prime}, s\right) p\left(s^{\prime} \mid s\right) p(s)}{p(s)}\space (补一个s的概率就可以用条件概率公式了！) \\
-& =\sum_{s^{\prime}} \sum_{g^{\prime}} \frac{g^{\prime} p\left(g^{\prime} \mid s^{\prime}, s\right) p\left(s^{\prime}, s\right)}{p(s)}\space (由条件概率公式) \\
-& =\sum_{s^{\prime}} \sum_{g^{\prime}} \frac{g^{\prime} p\left(g^{\prime}, s^{\prime}, s\right)}{p(s)} \\
-& =\sum_{s^{\prime}} \sum_{g^{\prime}} g^{\prime} p\left(g^{\prime}, s^{\prime} \mid s\right)\space (由条件概率公式) \\
-& =\sum_{g^{\prime}} \sum_{s^{\prime}} g^{\prime} p\left(g^{\prime}, s^{\prime} \mid s\right) \\
-& =\sum_{g^{\prime}} g^{\prime} p\left(g^{\prime} \mid s\right) \\
+\mathbb{E}\left[\mathbb{E}\left[G_{t+1} \mid s_{t+1}\right] \mid s_t\right] & =\mathbb{E}\left[\mathbb{E}\left[g^{\prime} \mid s^{\prime}\right] \mid s\right] \\\\
+& =\mathbb{E}\left[\sum_{g^{\prime}} g^{\prime} p\left(g^{\prime} \mid s^{\prime}\right) \mid s\right]\space (由条件期望定义) \\\\
+& =\sum_{s^{\prime}} \sum_{g^{\prime}} g^{\prime} p\left(g^{\prime} \mid s^{\prime}, s\right) p\left(s^{\prime} \mid s\right)\space (由条件期望定义) \\\\
+& =\sum_{s^{\prime}} \sum_{g^{\prime}} \frac{g^{\prime} p\left(g^{\prime} \mid s^{\prime}, s\right) p\left(s^{\prime} \mid s\right) p(s)}{p(s)}\space (补一个s的概率就可以用条件概率公式了！) \\\\
+& =\sum_{s^{\prime}} \sum_{g^{\prime}} \frac{g^{\prime} p\left(g^{\prime} \mid s^{\prime}, s\right) p\left(s^{\prime}, s\right)}{p(s)}\space (由条件概率公式) \\\\
+& =\sum_{s^{\prime}} \sum_{g^{\prime}} \frac{g^{\prime} p\left(g^{\prime}, s^{\prime}, s\right)}{p(s)} \\\\
+& =\sum_{s^{\prime}} \sum_{g^{\prime}} g^{\prime} p\left(g^{\prime}, s^{\prime} \mid s\right)\space (由条件概率公式) \\\\
+& =\sum_{g^{\prime}} \sum_{s^{\prime}} g^{\prime} p\left(g^{\prime}, s^{\prime} \mid s\right) \\\\
+& =\sum_{g^{\prime}} g^{\prime} p\left(g^{\prime} \mid s\right) \\\\
 & =\mathbb{E}\left[g^{\prime} \mid s\right]=\mathbb{E}\left[G_{t+1} \mid s_t\right]
 \end{aligned}
 $$
@@ -84,16 +84,18 @@ $$
 
 
 **<u>proof</u>**
+
 $$
-\begin{aligned}  
-V(s) & = \mathbb{E}\left[G_t \mid s_t=s\right] \\
-     & = \mathbb{E}\left[r_{t+1}+\gamma r_{t+2}+\gamma^2 r_{t+3}+\ldots \mid s_t=s\right] \quad \text{(由回报定义)} \\
-     & = \mathbb{E}\left[r_{t+1} \mid s_t=s\right] + \gamma \mathbb{E}\left[r_{t+2}+\gamma r_{t+3}+\gamma^2 r_{t+4}+\ldots \mid s_t=s\right] \\
-     & = R(s) + \gamma \mathbb{E}\left[G_{t+1} \mid s_t=s\right] \\
-     & = R(s) + \gamma \mathbb{E}\left[V\left(s_{t+1}\right) \mid s_t=s\right] \quad \text{(由 Lemma 1)} \\
-     & = R(s) + \gamma \sum_{s^{\prime} \in S} p\left(s^{\prime} \mid s\right) V\left(s^{\prime}\right) \quad \text{(由条件期望定义)}  
+\begin{aligned}
+V(s) & = \mathbb{E}\left[G_t \mid s_t=s\right] \\\\
+& = \mathbb{E}\left[r_{t+1}+\gamma r_{t+2}+\gamma^2 r_{t+3}+\ldots \mid s_t=s\right] \quad \text{(由回报定义)} \\\\
+& = \mathbb{E}\left[r_{t+1} \mid s_t=s\right] + \gamma \mathbb{E}\left[r_{t+2}+\gamma r_{t+3}+\gamma^2 r_{t+4}+\ldots \mid s_t=s\right] \\\\
+& = R(s) + \gamma \mathbb{E}\left[G_{t+1} \mid s_t=s\right] \\\\
+& = R(s) + \gamma \mathbb{E}\left[V\left(s_{t+1}\right) \mid s_t=s\right] \quad \text{(由 Lemma 1)} \\\\
+& = R(s) + \gamma \sum_{s^{\prime} \in S} p\left(s^{\prime} \mid s\right) V\left(s^{\prime}\right) \quad \text{(由条件期望定义)}
 \end{aligned}
 $$
+
 大体思路就是将t时刻的V转化为G，利用期望的性质，拆分即时奖励和t+1时刻的G，再把G转化回V，从而得到V(s)与V(s')的关系！
 
 贝尔曼方程**定义了当前状态与未来状态之间的迭代关系**，表示当前状态的价值函数可以通过下个状态的价值函数来计算。因此在大多数情况下，贝尔曼方程的推导与计算确实是从后向前进行的，这意味着我们通常会从最末尾的状态开始往前计算状态的价值函数。
@@ -102,20 +104,19 @@ $$
 $$
 \begin{aligned}
 &\begin{aligned}
-\boldsymbol{V} & =\boldsymbol{R}+\gamma \boldsymbol{P} \boldsymbol{V} \\
-\boldsymbol{I} \boldsymbol{V} & =\boldsymbol{R}+\gamma \boldsymbol{P} \boldsymbol{V} \\
-(\boldsymbol{I}-\gamma \boldsymbol{P}) \boldsymbol{V} & =\boldsymbol{R} \\
+\boldsymbol{V} & =\boldsymbol{R}+\gamma \boldsymbol{P} \boldsymbol{V} \\\\
+\boldsymbol{I} \boldsymbol{V} & =\boldsymbol{R}+\gamma \boldsymbol{P} \boldsymbol{V} \\\\
+(\boldsymbol{I}-\gamma \boldsymbol{P}) \boldsymbol{V} & =\boldsymbol{R} \\\\
 \boldsymbol{V} & =(\boldsymbol{I}-\gamma \boldsymbol{P})^{-1} \boldsymbol{R}
-\end{aligned}\\
-&\text { 我们可以直接得到解析解（analytic solution）：}\\
-&\boldsymbol{V}=(\boldsymbol{I}-\gamma \boldsymbol{P})^{-1} \boldsymbol{R}
+\end{aligned}
 \end{aligned}
 $$
 
+我们可以直接得到解析解（analytic solution）：$ \boldsymbol{V}=(\boldsymbol{I}-\gamma \boldsymbol{P})^{-1} \boldsymbol{R} $
 
 ### 动态规划
 
-通过**自举（bootstrapping）**方法不断迭代，当最后更新的状态和我们上一个状态的区别并不大的时候（收敛了），更新就可以停止。
+通过自举 **自举（bootstrapping）** 方法不断迭代，当最后更新的状态和我们上一个状态的区别并不大的时候（收敛了），更新就可以停止。
 
 
 
@@ -125,7 +126,7 @@ $$
 
 **<u>def</u>**
 
-定义策略为一个状态下可能采取动作的概率分布，$\pi (a|s)=p(a_t=a|s_t=s)$
+定义策略为一个状态下可能采取动作的概率分布：$\pi (a|s)=p(a_t=a|s_t=s)$
 
 ![image-20250120125020130](/img/image-20250120125020130.png)
 
@@ -147,14 +148,14 @@ $$
 
 ### Bellman equation
 
-形式与MRP仍然是类似的！只是多了动作a
+形式与MRP仍然是类似的！只是多了动作 $ a $ ：
 $$
 \begin{aligned}
-Q(s, a) & =\mathbb{E}\left[G_t \mid s_t=s, a_t=a\right] \\
-& =\mathbb{E}\left[r_{t+1}+\gamma r_{t+2}+\gamma^2 r_{t+3}+\ldots \mid s_t=s, a_t=a\right] \\
-& =\mathbb{E}\left[r_{t+1} \mid s_t=s, a_t=a\right]+\gamma \mathbb{E}\left[r_{t+2}+\gamma r_{t+3}+\gamma^2 r_{t+4}+\ldots \mid s_t=s, a_t=a\right] \\
-& =R(s, a)+\gamma \mathbb{E}\left[G_{t+1} \mid s_t=s, a_t=a\right] \\
-& =R(s, a)+\gamma \mathbb{E}\left[V\left(s_{t+1}\right) \mid s_t=s, a_t=a\right] \\
+Q(s, a) & =\mathbb{E}\left[G_t \mid s_t=s, a_t=a\right] \\\\
+& =\mathbb{E}\left[r_{t+1}+\gamma r_{t+2}+\gamma^2 r_{t+3}+\ldots \mid s_t=s, a_t=a\right] \\\\
+& =\mathbb{E}\left[r_{t+1} \mid s_t=s, a_t=a\right]+\gamma \mathbb{E}\left[r_{t+2}+\gamma r_{t+3}+\gamma^2 r_{t+4}+\ldots \mid s_t=s, a_t=a\right] \\\\
+& =R(s, a)+\gamma \mathbb{E}\left[G_{t+1} \mid s_t=s, a_t=a\right] \\\\
+& =R(s, a)+\gamma \mathbb{E}\left[V\left(s_{t+1}\right) \mid s_t=s, a_t=a\right] \\\\
 & =R(s, a)+\gamma \sum_{s^{\prime} \in S} p\left(s^{\prime} \mid s, a\right) V\left(s^{\prime}\right)
 \end{aligned}
 $$
@@ -186,7 +187,7 @@ $$
 ### 预测与控制
 
 - 预测（评估一个给定的策略）的输入是马尔可夫决策过程$< S,A,P,R,\gamma>$和策略$π$，输出是价值函数$V_π$。预测是指给定一个马尔可夫决策过程以及一个策略$π$，计算它的价值函数，也就是计算每个状态的价值。
-- 控制（搜索最佳策略）的输入是马尔可夫决策过程$<S,A,P,R,\gamma>$，输出是最佳价值函数（optimal value function）$V^*$和最佳策略（optimal policy）$π^*$。控制就是我们去寻找一个最佳的策略，然后同时输出它的最佳价值函数以及最佳策略。
+- 控制（搜索最佳策略）的输入是马尔可夫决策过程$<S,A,P,R,\gamma>$，输出是最佳价值函数（optimal value function）$ V^* $和最佳策略（optimal policy）$ π^* $。控制就是我们去寻找一个最佳的策略，然后同时输出它的最佳价值函数以及最佳策略。
 
 实际上，这两者是递进的关系，在强化学习中，我们通过解决预测问题，进而解决控制问题。
 
@@ -215,28 +216,31 @@ $$
    - **Bellman optimality equation**：最佳策略下的一个状态的价值必须等于在这个状态下采取最好动作得到的回报的期望
 
 $$
-V_\pi(s)=\max _{a \in A} Q_\pi(s, a)
+V_\pi(s)=\max_{a \in A} Q_\pi(s, a)
 $$
 
-   只有当整个状态已经收敛后,我们得到最佳价值函数后,贝尔曼最优方程才会满足。满足贝尔曼最优方程后,我们可以采用最大化操作,即
+   只有当整个状态已经收敛后,我们得到最佳价值函数后,贝尔曼最优方程才会满足。满足贝尔曼最优方程后,我们可以采用最大化操作，即
+   
 $$
-V^*(s)=\max _{a} Q^*(s, a)
+V^\*(s)=\max_{a} Q^\*(s, a)
 $$
 
    因此，可以得到Q函数之间的转移：
+   
 $$
 \begin{aligned}
-Q^*(s, a) & =R(s, a)+\gamma \sum_{s^{\prime} \in S} p\left(s^{\prime} \mid s, a\right) V^*\left(s^{\prime}\right) \\
-& =R(s, a)+\gamma \sum_{s^{\prime} \in S} p\left(s^{\prime} \mid s, a\right) \max _a Q^*\left(s^{\prime}, a^{\prime}\right)
+Q^\*(s, a) & =R(s, a)+\gamma \sum_{s^{\prime} \in S} p\left(s^{\prime} \mid s, a\right) V^\*\left(s^{\prime}\right) \\\\
+& =R(s, a)+\gamma \sum_{s^{\prime} \in S} p\left(s^{\prime} \mid s, a\right) \max _a Q^\*\left(s^{\prime}, a^{\prime}\right)
 \end{aligned}
 $$
+
    类似也有状态价值函数之间的转移： 
+
 $$
 \begin{aligned}
-V^*(s) & =\max _a Q^*(s, a) \\
-
-& =\max _a R(s, a)+\max _a \gamma \sum_{s^{\prime} \in S} p\left(s^{\prime} \mid s, a\right) V^*\left(s^{\prime}\right) \\
-& =\max _a\left(R(s, a)+\gamma \sum_{s^{\prime} \in S} p\left(s^{\prime} \mid s, a\right) V^*\left(s^{\prime}\right)\right)
+V^\*(s) & =\max _a Q^\*(s, a) \\\\
+& =\max _a R(s, a)+\max _a \gamma \sum _{s^{\prime} \in S} p\left(s^{\prime} \mid s, a\right) V^\*\left(s^{\prime}\right) \\\\
+& =\max _a\left(R(s, a)+\gamma \sum _{s^{\prime} \in S} p\left(s^{\prime} \mid s, a\right) V^\*\left(s^{\prime}\right)\right)
 \end{aligned}
 $$
 
@@ -244,7 +248,7 @@ $$
 
 1. 价值迭代
 
-   最优性原理定理（principle of optimality theorem）：一个策略 $\pi(a \mid s)$ 在状态 $s$ 达到了最优价值，也就是 $V_\pi(s)=V^*(s)$ 成立，当且仅当对于任何能够从 $s$ 到达的 $s^{\prime}$ ，都已经达到了最优价值。也就是对于所有的 $s^{\prime}, V_\pi\left(s^{\prime}\right)=V^*\left(s^{\prime}\right)$ 恒成立。
+   最优性原理定理（principle of optimality theorem）：一个策略 $\pi(a \mid s)$ 在状态 $s$ 达到了最优价值，也就是 $V_\pi(s)=V^\*(s)$ 成立，当且仅当对于任何能够从 $s$ 到达的 $s^{\prime}$ ，都已经达到了最优价值。也就是对于所有的 $s^{\prime}, V_\pi\left(s^{\prime}\right)=V^\*\left(s^{\prime}\right)$ 恒成立。
 
 有点乱，待重看！
 
@@ -270,10 +274,10 @@ $$
 假设现在有样本 $x_1, x_2, \cdots, x_t$ ，我们可以把经验均值（empirical mean）转换成增量均值（incremental mean）的形式：
 $$
 \begin{aligned}
-\mu_t & =\frac{1}{t} \sum_{j=1}^t x_j \\
-& =\frac{1}{t}\left(x_t+\sum_{j=1}^{t-1} x_j\right) \\
-& =\frac{1}{t}\left(x_t+(t-1) \mu_{t-1}\right) \\
-& =\frac{1}{t}\left(x_t+t \mu_{t-1}-\mu_{t-1}\right) \\
+\mu_t & =\frac{1}{t} \sum_{j=1}^t x_j \\\\
+& =\frac{1}{t}\left(x_t+\sum_{j=1}^{t-1} x_j\right) \\\\
+& =\frac{1}{t}\left(x_t+(t-1) \mu_{t-1}\right) \\\\
+& =\frac{1}{t}\left(x_t+t \mu_{t-1}-\mu_{t-1}\right) \\\\
 & =\mu_{t-1}+\frac{1}{t}\left(x_t-\mu_{t-1}\right)
 \end{aligned}
 $$
@@ -308,14 +312,14 @@ R(\tau) = \sum_{t=0}^T r(s_t, a_t)
 $$
 因此，给定一个策略 $\theta$ ，就可以计算期望奖励：
 $$
-\bar{R}_\theta=\sum_\tau R(\tau) p_\theta(\tau)=\mathbb{E}_{\tau \sim p_\theta(\tau)}[R(\tau)]
+\bar{R}_\theta = \sum _\tau R(\tau) p _\theta(\tau)=\mathbb{E} _{\tau \sim p _\theta(\tau)}[R(\tau)]
 $$
 
 ## 梯度上升
 
 进行梯度上升，我们先要计算期望奖励 $\bar{R}_\theta$ 的梯度。我们对 $\bar{R}_\theta$ 做梯度运算
 $$
-\nabla \bar{R}_\theta=\sum_\tau R(\tau) \nabla p_\theta(\tau)
+\nabla \bar{R}_\theta=\sum _\tau R(\tau) \nabla p _\theta(\tau)
 $$
 
 其中，只有 $p_\theta(\tau)$ 与 $\theta$ 有关。奖励函数 $R(\tau)$ 不需要是可微分的（differentiable）。
@@ -337,9 +341,9 @@ $$
 从而得到 $\nabla p_\theta(\tau)=p_\theta(\tau) \nabla \log p_\theta(\tau)$ 。然后看看取对数的威力：
 $$
 \begin{aligned}
-\nabla \log p_\theta(\tau) & =\nabla\left(\log p\left(s_1\right)+\sum_{t=1}^T \log p_\theta\left(a_t \mid s_t\right)+\sum_{t=1}^T \log p\left(s_{t+1} \mid s_t, a_t\right)\right) \\
-& =\nabla \log p\left(s_1\right)+\nabla \sum_{t=1}^T \log p_\theta\left(a_t \mid s_t\right)+\nabla \sum_{t=1}^T \log p\left(s_{t+1} \mid s_t, a_t\right) \\
-& =\nabla \sum_{t=1}^T \log p_\theta\left(a_t \mid s_t\right) \\
+\nabla \log p_\theta(\tau) & =\nabla\left(\log p\left(s_1\right)+\sum_{t=1}^T \log p_\theta\left(a_t \mid s_t\right)+\sum_{t=1}^T \log p\left(s_{t+1} \mid s_t, a_t\right)\right) \\\\
+& =\nabla \log p\left(s_1\right)+\nabla \sum_{t=1}^T \log p_\theta\left(a_t \mid s_t\right)+\nabla \sum_{t=1}^T \log p\left(s_{t+1} \mid s_t, a_t\right) \\\\
+& =\nabla \sum_{t=1}^T \log p_\theta\left(a_t \mid s_t\right) \\\\
 & =\sum_{t=1}^T \nabla \log p_\theta\left(a_t \mid s_t\right)
 \end{aligned}
 $$
@@ -350,17 +354,17 @@ $$
 接下来，就可以代入梯度运算啦：
 $$
 \begin{aligned}
-\nabla \bar{R}_\theta & =\sum_\tau R(\tau) \nabla p_\theta(\tau) \\
-& =\sum_\tau R(\tau) p_\theta(\tau) \frac{\nabla p_\theta(\tau)}{p_\theta(\tau)} \\
-& =\sum_\tau R(\tau) p_\theta(\tau) \nabla \log p_\theta(\tau) \\
-& =\mathbb{E}_{\tau \sim p_\theta(\tau)}\left[R(\tau) \nabla \log p_\theta(\tau)\right] \\
-& \approx \frac{1}{N} \sum_{n=1}^N R\left(\tau^n\right) \nabla \log p_\theta\left(\tau^n\right) \\
-& =\frac{1}{N} \sum_{n=1}^N \sum_{t=1}^{T_n} R\left(\tau^n\right) \nabla \log p_\theta\left(a_t^n \mid s_t^n\right)
+\nabla \bar{R}_\theta & =\sum _\tau R(\tau) \nabla p _\theta(\tau) \\\\
+& =\sum _\tau R(\tau) p _\theta(\tau) \frac{\nabla p _\theta(\tau)}{p _\theta(\tau)} \\\\
+& =\sum _\tau R(\tau) p _\theta(\tau) \nabla \log p _\theta(\tau) \\\\
+& =\mathbb{E} _{\tau \sim p _\theta(\tau)}\left[R(\tau) \nabla \log p _\theta(\tau)\right] \\\\
+& \approx \frac{1}{N} \sum _{n=1}^N R\left(\tau^n\right) \nabla \log p _\theta\left(\tau^n\right) \\\\
+& =\frac{1}{N} \sum _{n=1}^N \sum _{t=1}^{T_n} R\left(\tau^n\right) \nabla \log p _\theta\left(a _t^n \mid s _t^n\right)
 \end{aligned}
 $$
 
 
-实际上期望值 $\mathbb{E}_{\tau \sim p_\theta(\tau)}\left[R(\tau) \nabla \log p_\theta(\tau)\right]$ 无法计算，只能用样本来估计了！所以最后两步是在用采样的方式采样 $N$ 个 $\tau$ 并计算每一个的值。
+实际上期望值 $\mathbb{E} _{\tau \sim p _\theta(\tau)}\left[R(\tau) \nabla \log p _\theta(\tau)\right]$ 无法计算，只能用样本来估计了！所以最后两步是在用采样的方式采样 $N$ 个 $\tau$ 并计算每一个的值。
 
 
 
@@ -374,22 +378,22 @@ $$
 
 这不好，有的情景设置所有即时奖励都是正的，这种情况下任何一条轨迹的累计奖励都是正的，就大错特错咯。
 
-为了解决奖励总是正的的问题,我们可以把奖励减 $b$  (可取期望），即
+为了解决奖励总是正的的问题,我们可以把奖励减 $b$  （可取期望），即
 $$
 \begin{aligned}
 \nabla \bar{R}_\theta 
-& \approx\frac{1}{N} \sum_{n=1}^N \sum_{t=1}^{T_n} (R\left(\tau^n\right)-b) \nabla \log p_\theta\left(a_t^n \mid s_t^n\right)
+& \approx\frac{1}{N} \sum _{n=1}^N \sum _{t=1}^{T_n} (R\left(\tau^n\right)-b) \nabla \log p _\theta\left(a_t^n \mid s_t^n\right)
 \end{aligned}
 $$
 
 
 ### 分数分配
 
-为什么一定要选 $R(\tau ^n))$ 作为权重捏？对于一个动作来说，它之前发生的事对于奖励的贡献和它完全无关。那就从 $t$ 时刻开始计算权重吧，再加一个折扣：
+为什么一定要选 $R(\tau ^n))$ 作为权重呢？对于一个动作来说，它之前发生的事对于奖励的贡献和它完全无关。那就从 $t$ 时刻开始计算权重吧，再加一个折扣：
 $$
 \begin{aligned}
 \nabla \bar{R}_\theta 
-& \approx\frac{1}{N} \sum_{n=1}^N \sum_{t=1}^{T_n} (\sum_{t^\prime=t}^{T_n} \gamma^{t^\prime-t}r_{t^\prime}^n-b) \nabla \log p_\theta\left(a_t^n \mid s_t^n\right)
+& \approx\frac{1}{N} \sum _{n=1}^N \sum _{t=1}^{T_n} (\sum _{t^\prime=t}^{T_n} \gamma^{t^\prime-t}r _{t^\prime}^n-b) \nabla \log p _\theta\left(a_t^n \mid s_t^n\right)
 \end{aligned}
 $$
 
@@ -416,13 +420,13 @@ $$
 既然只一步不一样就可以变好，那假设每一步都不一样，还会变得更好！如下：
 $$
 \begin{aligned}
-Q_\pi\left(s, \pi^{\prime}(s)\right) &=\mathbb{E}\left[r_t+V_\pi\left(s_{t+1}\right) \mid s_t=s, a_t=\pi^{\prime}\left(s_t\right)\right] \\
-& \leq \mathbb{E}\left[r_t+Q^\pi\left(s_{t+1}, \pi^{\prime}\left(s_{t+1}\right)\right) \mid s_t=s, a_t=\pi^{\prime}\left(s_t\right)\right] \\
-& =\mathbb{E}\left[r_t+r_{t+1}+V^\pi\left(s_{t+2}\right) \mid s_t=s, a_t=\pi^{\prime}\left(s_t\right)\right] \\
-& \leq \mathbb{E}\left[r_t+r_{t+1}+Q^\pi\left(s_{t+2}, \pi^{\prime}\left(s_{t+2}\right) \mid s_t=s, a_t=\pi^{\prime}\left(s_t\right)\right]\right. \\
-& =\mathbb{E}\left[r_t+r_{t+1}+r_{t+2}+V^\pi\left(s_{t+3}\right) \mid s_t=s, a_t=\pi^{\prime}\left(s_t\right)\right] \\
-& \leq \cdots \\
-& \leq \mathbb{E}\left[r_t+r_{t+1}+r_{t+2}+\cdots \mid s_t=s, a_t=\pi^{\prime}\left(s_t\right)\right] \\
+Q_\pi\left(s, \pi^{\prime}(s)\right) &=\mathbb{E}\left[r_t+V_\pi\left(s_{t+1}\right) \mid s_t=s, a_t=\pi^{\prime}\left(s_t\right)\right] \\\\
+& \leq \mathbb{E}\left[r_t+Q^\pi\left(s_{t+1}, \pi^{\prime}\left(s_{t+1}\right)\right) \mid s_t=s, a_t=\pi^{\prime}\left(s_t\right)\right] \\\\
+& =\mathbb{E}\left[r_t+r_{t+1}+V^\pi\left(s_{t+2}\right) \mid s_t=s, a_t=\pi^{\prime}\left(s_t\right)\right] \\\\
+& \leq \mathbb{E}\left[r_t+r_{t+1}+Q^\pi\left(s_{t+2}, \pi^{\prime}\left(s_{t+2}\right) \mid s_t=s, a_t=\pi^{\prime}\left(s_t\right)\right]\right. \\\\
+& =\mathbb{E}\left[r_t+r_{t+1}+r_{t+2}+V^\pi\left(s_{t+3}\right) \mid s_t=s, a_t=\pi^{\prime}\left(s_t\right)\right] \\\\
+& \leq \cdots \\\\
+& \leq \mathbb{E}\left[r_t+r_{t+1}+r_{t+2}+\cdots \mid s_t=s, a_t=\pi^{\prime}\left(s_t\right)\right] \\\\
 & =V^{\pi^{\prime}}(s)
 \end{aligned}
 $$
@@ -444,7 +448,7 @@ $$
 
 例如,假设我们用深度 Q 网络来玩 slither.io  网页游戏。我们有一条蛇,它在环境里面走来走去,吃到星星,就加分。假设游戏一开始,蛇往上走,然  后吃到星星,就可以得到分数,它就知道往上走可以得到奖励。接下来它就再也不会采取往上走以外的动  作了,以后就会变成每次游戏一开始,它就往上走,然后游戏结束。所以需要有探索的机制,让智能体知  道,虽然根据之前采样的结果,a2 好像是不错的,但我们至少偶尔也试一下 a1 与 a3,说不定它们更好。  
 
-这个问题就是**探索-利用窘境(exploration-exploitation dilemma)**问题
+这个问题就是 **探索-利用窘境(exploration-exploitation dilemma)** 问题
 
 一种方法是$\epsilon$-贪心，即每次有一定概率随机探索，其他情况下按照Q函数来决定动作；另一种是玻尔兹曼探索，在探索时不像前者那样均匀地探索，而是有一定说法：
 $$
@@ -464,9 +468,9 @@ $$
 
 
 
-- [ ] 一个很形象的类比：
-  - **ε-贪心** 就像 **赌徒**，90% 的时候去玩最赚钱的老虎机，10% 完全随机换一台试试。
-  - **玻尔兹曼** 就像 **股票投资者**，越是有收益的股票，投资的概率越大，但不会全压在一只股票上，而是有一定分布。
+>一个很形象的类比：
+>  - **ε-贪心** 就像 **赌徒**，90% 的时候去玩最赚钱的老虎机，10% 完全随机换一台试试。
+>  - **玻尔兹曼** 就像 **股票投资者**，越是有收益的股票，投资的概率越大，但不会全压在一只股票上，而是有一定分布。
 
 ### Experience Replay
 
@@ -485,13 +489,17 @@ $$
 ### Double DQN
 
 在实现上,Q 值往往是被高估的，使用
+
 $$
-Q\left(s_t, a_t\right) \longleftrightarrow r_t+\max _a Q\left(s_{t+1}, a\right)
+Q\left(s_t, a_t\right) \longleftrightarrow r_t+\max _a Q\left(s _{t+1}, a\right)
 $$
+
 作为目标，会使得网络估计的Q值太高，因此DDQN设置了两个网络，一个用来选动作，另一个用来计算目标：
+
 $$
-Q\left(s_t, a_t\right) \longleftrightarrow r_t+Q^\prime(s_{t+1},\underset{a}{\arg \max}\space Q\left(s_{t+1}, a\right))
+Q\left(s_t, a_t\right) \longleftrightarrow r_t+Q^\prime(s _{t+1},\underset{a}{\arg \max}\space Q\left(s _{t+1}, a\right))
 $$
+
 加入Q高估了选出来的动作a，只要Q'没有高估a对应的Q值就可以；加入Q'高估了某个的动作a，只要Q没有选择这个动作就可以。而且，这一操作对于DQN的更改是最少的，几乎没有增加任何运算量！
 
 ### Dueling DQN
@@ -520,7 +528,7 @@ Q函数是累计奖励的期望值，也就是对于一个分布取了平均值�
 
 如果直接对分布建模，每一个状态动作对都能得到一个分布，就可以有更多选择，如：
 
-“如果分布  方差很大,这代表采取这个动作虽然平均而言很不错,但也许风险很高,我们可以训练一个网络来规避风  险。在两个动作平均值都差不多的情况下,也许可以选一个风险比较小的动作来执行”
+“如果分布  方差很大,这代表采取这个动作虽然平均而言很不错,但也许风险很高,我们可以训练一个网络来规避风险。在两个动作平均值都差不多的情况下,也许可以选一个风险比较小的动作来执行”
 
 但这一技巧难以实现。
 
@@ -532,7 +540,7 @@ Q函数是累计奖励的期望值，也就是对于一个分布取了平均值�
 
 ### 梯度上升
 
-既然要解决的是一个优化问题(optimization problem),我们就要最大化目标  函数(objective function)。要最大化目标函数,我们就可以用梯度上升。
+既然要解决的是一个优化问题(optimization problem),我们就要最大化目标函数(objective function)。要最大化目标函数,我们就可以用梯度上升。
 
 但有如下两个问题：
 
@@ -558,7 +566,7 @@ $$
 $$
 \begin{aligned}
 \nabla \bar{R}_\theta 
-& \approx\frac{1}{N} \sum_{n=1}^N \sum_{t=1}^{T_n} (R\left(\tau^n\right)-b) \nabla \log p_\theta\left(a_t^n \mid s_t^n\right)
+& \approx\frac{1}{N} \sum _{n=1}^N \sum _{t=1}^{T_n} (R\left(\tau^n\right)-b) \nabla \log p _\theta\left(a_t^n \mid s_t^n\right)
 \end{aligned}
 $$
 
@@ -586,7 +594,7 @@ $$
 $$
 \begin{aligned}
 \nabla \bar{R}_\theta 
-& \approx\frac{1}{N} \sum_{n=1}^N \sum_{t=1}^{T_n} (r_t^n+V_\pi\left(s_{t+1}^n\right)-V_\pi\left(s_t^n\right)) \nabla \log p_\theta\left(a_t^n \mid s_t^n\right)
+& \approx\frac{1}{N} \sum _{n=1}^N \sum _{t=1}^{T_n} (r_t^n+V _\pi\left(s _{t+1}^n\right)-V _\pi\left(s_t^n\right)) \nabla \log p _\theta\left(a_t^n \mid s_t^n\right)
 \end{aligned}
 $$
 
