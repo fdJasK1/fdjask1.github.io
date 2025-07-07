@@ -53,7 +53,7 @@ $$
 从价值函数出发，拆分出即时奖励和未来折扣奖励按概率的加权平均，得到贝尔曼方程：
 
 $$
-V(s)=\underbrace{R(s)}_{\text {即时奖励 }}+\underbrace{\gamma \sum_{s^{\prime} \in S} p\left(s^{\prime} \mid s\right) V\left(s^{\prime}\right)}_{\text {未来奖励的折扣总和 }}
+V(s)=\underbrace{R(s)}_{\text {即时奖励 }}+\underbrace{\gamma \sum _{s^{\prime} \in S} p\left(s^{\prime} \mid s\right) V\left(s^{\prime}\right)} _{\text {未来奖励的折扣总和 }}
 $$
 
 这里$ R(s)=\mathbb{E}\left[r_{t+1} \mid s_t=s\right] $，具体证明见下方。

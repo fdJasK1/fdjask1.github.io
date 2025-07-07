@@ -161,7 +161,7 @@ document.addEventListener("DOMContentLoaded", function() {
     <h1 class="post-title entry-hint-parent">
       RL Notes
     </h1>
-    <div class="post-meta"><span title='2025-02-07 13:44:09 +0800 CST'>February 7, 2025</span>&nbsp;·&nbsp;14 min&nbsp;·&nbsp;6570 words
+    <div class="post-meta"><span title='2025-02-07 13:44:09 +0800 CST'>February 7, 2025</span>&nbsp;·&nbsp;14 min&nbsp;·&nbsp;6572 words
 
 
       &nbsp·&nbsp<span id="busuanzi_container_page_pv">本文阅读量<span id="busuanzi_value_page_pv"></span>次</span>
@@ -195,7 +195,7 @@ $$</p>
 <h3 id="bellman-equation">Bellman equation<a hidden class="anchor" aria-hidden="true" href="#bellman-equation">#</a></h3>
 <p>从价值函数出发，拆分出即时奖励和未来折扣奖励按概率的加权平均，得到贝尔曼方程：</p>
 <p>$$
-V(s)=\underbrace{R(s)}<em>{\text {即时奖励 }}+\underbrace{\gamma \sum</em>{s^{\prime} \in S} p\left(s^{\prime} \mid s\right) V\left(s^{\prime}\right)}_{\text {未来奖励的折扣总和 }}
+V(s)=\underbrace{R(s)}_{\text {即时奖励 }}+\underbrace{\gamma \sum _{s^{\prime} \in S} p\left(s^{\prime} \mid s\right) V\left(s^{\prime}\right)} _{\text {未来奖励的折扣总和 }}
 $$</p>
 <p>这里$ R(s)=\mathbb{E}\left[r_{t+1} \mid s_t=s\right] $，具体证明见下方。</p>
 <p><strong><!-- raw HTML omitted -->Lemma1<!-- raw HTML omitted --></strong>
