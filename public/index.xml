@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>fdJasK1&#39;s Blog</title>
+    <link>http://localhost:64242/</link>
+    <description>Recent content on fdJasK1&#39;s Blog</description>
+    <generator>Hugo -- 0.142.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 03 May 2025 09:16:59 +0800</lastBuildDate>
+    <atom:link href="http://localhost:64242/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BUAA_2025_OO_Unit2 单元总结</title>
+      <link>http://localhost:64242/posts/2025/05/oo_unit2/</link>
+      <pubDate>Sat, 03 May 2025 09:16:59 +0800</pubDate>
+      <guid>http://localhost:64242/posts/2025/05/oo_unit2/</guid>
+      <description>北航2025年面向对象设计与构造Unit2总结</description>
+    </item>
+    <item>
+      <title>BUAA_2025_OS_Lab3 上机总结</title>
+      <link>http://localhost:64242/posts/2025/04/os_lab3/</link>
+      <pubDate>Wed, 30 Apr 2025 21:11:31 +0800</pubDate>
+      <guid>http://localhost:64242/posts/2025/04/os_lab3/</guid>
+      <description>北航2025年操作系统Lab3上机题目回顾及分析</description>
+    </item>
+    <item>
+      <title>BUAA_2025_OO_Unit1 单元总结</title>
+      <link>http://localhost:64242/posts/2025/03/oo_unit1/</link>
+      <pubDate>Sun, 23 Mar 2025 18:37:03 +0800</pubDate>
+      <guid>http://localhost:64242/posts/2025/03/oo_unit1/</guid>
+      <description>北航2025年面向对象设计与构造Unit1总结</description>
+    </item>
+    <item>
+      <title>BUAA_2025_OS_Lab0 上机总结</title>
+      <link>http://localhost:64242/posts/2025/03/os_lab0/</link>
+      <pubDate>Sat, 15 Mar 2025 11:06:11 +0800</pubDate>
+      <guid>http://localhost:64242/posts/2025/03/os_lab0/</guid>
+      <description>北航2025年操作系统Lab0上机题目回顾及分析</description>
+    </item>
+    <item>
+      <title>BUAA_2024_俱乐部课程_游泳 课程总结</title>
+      <link>http://localhost:64242/posts/2025/02/swimming_club/</link>
+      <pubDate>Mon, 17 Feb 2025 23:28:21 +0800</pubDate>
+      <guid>http://localhost:64242/posts/2025/02/swimming_club/</guid>
+      <description>北航2024年游泳俱乐部课程回顾</description>
+    </item>
+    <item>
+      <title>Cruise Control Diaries #1</title>
+      <link>http://localhost:64242/posts/2025/02/cruise_control_diaries_1/</link>
+      <pubDate>Thu, 13 Feb 2025 23:46:55 +0800</pubDate>
+      <guid>http://localhost:64242/posts/2025/02/cruise_control_diaries_1/</guid>
+      <description>&lt;p&gt;拿驾照即将年满一年了，总行驶里程得有2000km~3000km。感觉还是很开心的！&lt;/p&gt;
+&lt;p&gt;应该是去年寒假，在大望路的Starbucks和Chris见面聊起来学车的事，他就说现在开车已经是个必备的技能了。我当时觉得有点难评，毕竟自动驾驶的时代马上就要来临，现在学车是否有必要性还有待考究。但我从一开始确实就是想学车的。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>RL Notes</title>
+      <link>http://localhost:64242/posts/rl-notes/</link>
+      <pubDate>Fri, 07 Feb 2025 13:44:09 +0800</pubDate>
+      <guid>http://localhost:64242/posts/rl-notes/</guid>
+      <description>我的强化学习笔记</description>
+    </item>
+    <item>
+      <title>My First Post</title>
+      <link>http://localhost:64242/posts/2025/02/my_first_post/</link>
+      <pubDate>Mon, 03 Feb 2025 14:39:56 +0800</pubDate>
+      <guid>http://localhost:64242/posts/2025/02/my_first_post/</guid>
+      <description>&lt;p&gt;Hello World!&lt;/p&gt;
+&lt;p&gt;This is the very first post of mine!&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-plain&#34; data-lang=&#34;plain&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     _,---.                    ,--.-,   ,---.        ,-,--.  ,--.-.,-.  ,-----.--.  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  .-`.&amp;#39; ,  \  _,..---._       |==&amp;#39; -| .--.&amp;#39;  \     ,-.&amp;#39;-  _\/==/- |\  \/` ` - /==/  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; /==/_  _.-&amp;#39;/==/,   -  \      |==|- | \==\-/\ \   /==/_ ,_.&amp;#39;|==|_ `/_ /`-&amp;#39;-. -|==|  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/==/-  &amp;#39;..-.|==|   _   _\   __|==|, | /==/-|_\ |  \==\  \   |==| ,   /     | `|==|  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|==|_ ,    /|==|  .=.   |,--.-&amp;#39;\=|- | \==\,   - \  \==\ -\  |==|-  .|      | -|==|  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|==|   .--&amp;#39; |==|,|   | -||==|- |=/ ,| /==/ -   ,|  _\==\ ,\ |==| _ , \     | `|==|  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|==|-  |    |==|  &amp;#39;=&amp;#39;   /|==|. /=| -|/==/-  /\ - \/==/\/ _ |/==/  &amp;#39;\  |  .-&amp;#39;,&amp;#39;|==|  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/==/   \    |==|-,   _`/ \==\, `-&amp;#39; / \==\ _.\=\.-&amp;#39;\==\ - , /\==\ /\=\.&amp;#39; /     \==\  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;`--`---&amp;#39;    `-.`.____.&amp;#39;   `--`----&amp;#39;   `--`         `--`---&amp;#39;  `--`       `-----`---` 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Friends</title>
+      <link>http://localhost:64242/friends/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:64242/friends/</guid>
+      <description>&lt;style type=&#34;text/css&#34;&gt;
+    .friends {
+        --link-count-per-row: 1;
+    }
+
+    @media screen and (min-width: 576px) {
+        .friends {
+            --link-count-per-row: 2;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .friends {
+            --link-count-per-row: 3;
+        }
+    }
+
+    .friends {
+        display: grid;
+        grid-template-columns: repeat(var(--link-count-per-row), 1fr);
+        grid-gap: 16px;
+    }
+
+     
+    .friend-skeleton {
+        height: 280px;
+        display: inline-block;
+        position: relative;
+    }
+
+    .friend {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.67s cubic-bezier(0.19, 1, 0.22, 1);
+        border-radius: var(--radius);
+        box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+            0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12) !important;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .friend:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
+            0 5px 8px 0 rgba(0, 0, 0, 0.14), 0 1px 14px 0 rgba(0, 0, 0, 0.12) !important;
+    }
+
+    .friend-avatar {
+        object-fit: cover;
+        width: 100%;
+        height: 180px;
+        margin: 0 !important;
+        border-radius: 0 !important;
+    }
+    .friend-content {
+        text-align: center;
+        flex: 1;
+        width: 100%;
+        padding: 16px;
+        background: var(--entry);
+        transform: translate3d(0, 0, 0);
+    }
+
+    .friend-name {
+        font-size: 1.2rem;
+        font-weight: bold;
+        transform: inherit;
+    }
+
+    .friend-description {
+        font-size: 0.8rem;
+        color: var(--secondary);
+        transform: translate3d(0, 0, 0);
+    }
+&lt;/style&gt;
+&lt;div class=&#34;friends&#34;&gt;
+    
+    &lt;div class=&#34;friend-skeleton&#34;&gt;
+        &lt;a href=&#34;https://kamonto.github.io/Kamonto_blog/&#34; target=&#34;_blank&#34;&gt;
+            &lt;div class=&#34;friend&#34;&gt;
+                &lt;img class=&#34;friend-avatar&#34; src=&#34;https://kamonto.github.io/Kamonto_blog/img/profile_picture.png&#34; /&gt;
+                &lt;div class=&#34;friend-content&#34;&gt;
+                    &lt;div class=&#34;friend-name&#34;&gt;Kamonto&lt;/div&gt;
+                    &lt;div class=&#34;friend-description&#34;&gt;↑ 他的 CO 教程有点东西&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&#34;friend-skeleton&#34;&gt;
+        &lt;a href=&#34;https://theuho.site/&#34; target=&#34;_blank&#34;&gt;
+            &lt;div class=&#34;friend&#34;&gt;
+                &lt;img class=&#34;friend-avatar&#34; src=&#34;http://localhost:64242/uho.png&#34; /&gt;
+                &lt;div class=&#34;friend-content&#34;&gt;
+                    &lt;div class=&#34;friend-name&#34;&gt;UHO&lt;/div&gt;
+                    &lt;div class=&#34;friend-description&#34;&gt;随缘更新&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    
+&lt;/div&gt;</description>
+    </item>
+  </channel>
+</rss>
